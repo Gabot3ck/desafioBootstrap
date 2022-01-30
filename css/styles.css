@@ -183,6 +183,9 @@ header .card-body p{
 	font-weight: 600;
 	color: white;
 }
+header .card-body h3{
+	color: white;
+}
 header .card .card-body{
 	justify-content: center;
 }
@@ -203,24 +206,7 @@ header .card .card-body{
 	align-items: flex-start;
 	color: white;
 }
-.header__enlaces img{
-	position: absolute;
-	z-index: -999;
-	width: 100%;
-	height: 100%;
-}
-.header__enlaces div{
-	margin: 25px 0 0 35px;
-	padding: 25px 20px;
-	border-radius: 8px;
-	width: contain;
-	height: auto;
-	background-color: rgba(1,162,169,.65);
-}
-.header__enlaces div p{
-	margin-top: 10px;
-	font-size: 1.1rem;
-}
+
 
 header main{
 	border-radius: 8px;
