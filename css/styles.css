@@ -237,6 +237,9 @@ header .card .card-body{
 	margin-left: 15px;
 }
 
+
+
+
 /********** M A I N --- "Contenido principal de promociones" *********/
 .promociones{
 	margin: 0 auto 300px;
@@ -296,38 +299,6 @@ header .card .card-body{
 
 
 
-/*********  A S I D E - Google Ads **********/
-.ads{
-	margin-top: 60px;
-	padding: 15px;
-	width: 100%;
-	height: inherit;
-	grid-column: 5/6;
-	grid-row: 5/9;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: #f9bb04;
-}
-.ads section{
-	margin: 5px auto 0;
-	padding: 10px;
-	width: 90%;
-	background-color: #3b8ad9;
-}
-.ads section h4{
-	margin-bottom: 10px;
-	font-size: 1.6rem;
-	text-align: center;
-	color: white;
-}
-.ads section p{
-	color: white;
-}
-.ads img{
-	margin: 20px auto 0;
-	width: 100%;
-}
 
 
 
@@ -937,45 +908,7 @@ footer{
 		margin: 0 auto;
 		max-width: 99%;
 	}
-	.estadisticas{
-		padding: 25px 0;
-		width: 100vw;
-		height: 100%;
-		grid-column: 1/2;
-		grid-row: 3/4;
-	}
-	.estadisticas div h4{
-		font-size: 2.8rem;
-	}
-	.ads{
-		margin: 0;
-		padding: 25px 15px;
-		grid-column: 1/2;
-		grid-row: 4/5;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.ads section{
-		margin: 0;
-	}
-	.ads section:nth-child(3),
-	.ads section:nth-child(5),
-	.ads a:nth-child(4),
-	.ads a:nth-child(6){
-		display: none;
-	}
-	.ads section{
-		width: 45%;
-		height: 180px;
-		overflow: hidden;
-	}
-	.ads a{
-		width: 45%;
-	}
-	.ads img{
-		margin: 0;
-		width: 100%;
-	}
+
 	.promociones{
 		margin: 0;
 		height: 100%;
@@ -1213,49 +1146,7 @@ footer{
 	.index__header{
 		display: inline-block;
 	}
-	.estadisticas{
-		padding-top: 10px;
-		width: 100vw;
-		height: 100%;
-		grid-column: 1/2;
-		grid-row: 3/4;
-	}
-	.estadisticas div h4{
-		font-size: 2.8rem;
-	}
-	.ads{
-		margin: 0;
-		padding: 25px 15px;
-		grid-column: 1/2;
-		grid-row: 4/5;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-	.ads section{
-		margin: 0;
-	}
-	.ads section:nth-child(3),
-	.ads section:nth-child(5),
-	.ads a:nth-child(4),
-	.ads a:nth-child(6){
-		display: none;
-	}
-	.ads section{
-		width: 45%;
-		height: 180px;
-		overflow: hidden;
-	}
-	.ads a{
-		width: 45%;
-		max-height: 50%;
-	
-	}
-	.ads img{
-		margin: 0;
-		width: 100%;
-		max-height: 180px;
-	}
+
 	.promociones{
 		margin: 0;
 		height: 100%;
@@ -1418,43 +1309,7 @@ footer{
 		width: 450px;
 		height: 75%;
 	}
-	.estadisticas{
-		grid-column: 2/3;
-		grid-row: 3/5;
-	}
-	.ads{
-		margin: 0;
-		padding: 25px 15px;
-		grid-column: 1/4;
-		grid-row: 5/6;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-	.ads section{
-		margin: 0;
-	}
-	.ads section:nth-child(3),
-	.ads section:nth-child(5),
-	.ads a:nth-child(4),
-	.ads a:nth-child(6){
-		display: none;
-	}
-	.ads section{
-		width: 45%;
-		height: 180px;
-		overflow: hidden;
-	}
-	.ads a{
-		width: 45%;
-		max-height: 50%;
-	
-	}
-	.ads img{
-		margin: 0;
-		width: 100%;
-		max-height: 180px;
-	}
+
 	.promociones{
 		margin: 0;
 		height: 100%;
