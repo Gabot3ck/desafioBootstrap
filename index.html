@@ -19,8 +19,8 @@
 
     <!-- ***** M E N Ú   D E    N A V E G A C I Ó N *****-->
     
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md mx-auto navbar-light bg-light ">
+        <div class="container-fluid ">
             <a class="navbar-brand" href="index.html">
                 <img class="me-3"  src="images/logo-nav.jpg" alt="Logo Clínica Dental Care" width="40" height="40">
                 <span class="menu__dental">Dental</span>
@@ -30,7 +30,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 mx-md-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 mx-md-auto bg-light">
                     <li class="nav-item me-md-2 me-lg-4">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
@@ -73,13 +73,15 @@
 
 
     <!-- **********  H E A D E R  ********** -->
-    <header class="jumbotron index__header">
-        <div class="card w-100 container-fluid">
-            <div class="card-body d-flex flex-column align-items-start">
-                <h3 class="step-6">Clínica Dental</h3>
-                <h1 class="card-title fw-bold step-8">Dental Care</h1>
-                <p class="card-text w-50 w-md-100 step-4">Porque todo se logra con una sonrisa.</p>
-                <a href="#promociones" class="btn btn-primary mt-3">LEER MÁS</a>
+    <header class="index__header mx-auto">
+        <div class="wrapper">
+            <div class="card w-100 container-fluid">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <h3 class="step-6">Clínica Dental</h3>
+                    <h1 class="card-title fw-bold step-8">Dental Care</h1>
+                    <p class="card-text w-50 w-md-100 step-4">Porque todo se logra con una sonrisa.</p>
+                    <a href="#promociones" class="btn btn-primary mt-3">LEER MÁS</a>
+                </div>
             </div>
         </div>
     </header>
@@ -114,13 +116,10 @@
 
 
 
-    <!-- **********  M A I N - "Ofertas del mes" ********** -->
+        <!-- **********  M A I N - "Ofertas del mes" ********** -->
 
-    <main class="promociones" id="promociones">
-        <div class="promociones__wrapper" >
-            <h2>Nuestras Promociones</h2>
             <!-- Se insertan 3 cards con las promociones del mes. -->
-            <section>
+            <!-- <section>
                 <div class="card" >
                     <img src="images/promocion1.jpg" alt="Descripción de promoción">
                     <h3>Title</h3>
@@ -141,12 +140,45 @@
                 </div>
             </section>
         </div>
-    </main>
+    </main> -->
 
 
+    <main class="promociones  pb-5" id="promociones">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="text-center text-white step-7 mb-5">Nuestras Promociones</h2>
+                <div class="row justify-content-center justify-content-md-evenly">
 
+    <div class="card col-10  col-md-5 col-lg-3 p-0 mb-5 rounded-3 overflow-hidden">
+        <img src="images/promocion1.jpg" class="card-img-top img-fluid" alt="Descripción de promoción">
+        <div class="card-body d-flex flex-column">
+            <h3 class="card-title text-center">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://api.whatsapp.com/send?phone=+56993321198&text=Hola, Nececito más información acerca de la promoción3!" target="_blank" class="btn  mx-auto  mt-3">Consultar</a>
+        </div>
+    </div>
 
+    <div class="card col-10  col-md-5 col-lg-3 p-0 mb-5 rounded-3 overflow-hidden">
+        <img src="images/promocion2.jpg" class="card-img-top img-fluid" alt="Descripción de promoción">
+        <div class="card-body d-flex flex-column">
+            <h3 class="card-title text-center">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://api.whatsapp.com/send?phone=+56993321198&text=Hola, Nececito más información acerca de la promoción3!" target="_blank" class="btn  mx-auto  mt-3">Consultar</a>
+        </div>
+    </div>
 
+    <div class="card col-10  col-md-5 col-lg-3 p-0 mb-5 rounded-3 overflow-hidden">
+        <img src="images/promocion3.jpg" class="card-img-top img-fluid" alt="Descripción de promoción">
+        <div class="card-body d-flex flex-column">
+            <h3 class="card-title text-center">Card title</h3>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://api.whatsapp.com/send?phone=+56993321198&text=Hola, Nececito más información acerca de la promoción3!" target="_blank" class="btn  mx-auto mt-3">Consultar</a>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+</main>
 
 
     <!-- **********  S E C T I O N - 1  "Calidad e Innovación será un slider" **********-->

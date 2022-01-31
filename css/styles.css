@@ -29,10 +29,10 @@ html{
 }
 
 body{
-	position: relative;
+	/* position: relative; */
 	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
+	width: 100vw;
+	/* max-width: 1200px; */
 	background: white;
 	text-rendering: optimizeSpeed;
 	overflow-x: hidden;
@@ -92,6 +92,12 @@ p{
 	grid-column: 1/6;
 	grid-row: 5/9;
 }
+.wrapper{
+	margin: 0 auto;
+	max-width: 1200px;
+	height: inherit;
+
+}
 
 /*****  B O T O N E S *****/
 .btn-whatsapp{
@@ -115,9 +121,11 @@ p{
 /***** M E N Ú    D E    N A V E G A C I Ó N ******/
 
 .navbar{
-	position: fixed;
+	position: sticky;
+	top:0;
 	margin: 0 auto;
 	width: 100%;
+	height: 80px;
 	max-width: 1200px;
 	z-index: 999;
 	border-radius: 5px;
@@ -159,13 +167,13 @@ p{
 /**********  H  E  A  D  E  R  **********/
 header{
 	position: relative;
-	top: 80px;
+	top: 0;
 	margin: 0 auto ;
 	border-radius: 15px;
 	padding: 0 5px;
 	width: 100%;
 	height: 75vh;
-	max-height: 500px;
+	max-height: 700px;
 	max-width: 1200px;
 	overflow: hidden;
 }
@@ -173,6 +181,7 @@ header .card{
 	z-index: 980;
 	border: none;
 	height: inherit;
+	max-height: 700px;
 	background-image: url(../images/fondo-header.png);
 	background-position: right bottom;
 	background-size: contain;
@@ -213,13 +222,12 @@ header .card .card-body{
 /********* ESTADISTICAS **********/
 .estadisticas{
 	position: relative;
+	top: -15vh;
 	z-index: 990;
 	border: 2px solid var(--title-footer);
 	border-radius: 8px;
 	max-width: 800px;
 	background-color: white;
-	/* box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
-				-8px -8px 16px rgba(255, 255, 255, 0.8); */
 	-webkit-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 	-moz-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 	box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
@@ -242,12 +250,7 @@ header .card .card-body{
 
 /********** M A I N --- "Contenido principal de promociones" *********/
 .promociones{
-	margin: 0 auto 300px;
 	padding: 100px 15px 0;
-	width: 100%;
-	height: 400px;
-	grid-column: 1/5;
-	grid-row: 5/6;
 	background: var(--color-background);
 	background: -webkit-linear-gradient(to right, rgba(6,194,204,.6), rgba(0,173,70, .6)) , url(../images/fondo-promocion.jpg);
 	background: linear-gradient(to right, rgba(6,194,204,.6), rgba(0,173,70, .6)) , url(../images/fondo-promocion.jpg);
@@ -256,46 +259,33 @@ header .card .card-body{
 	background-attachment: fixed;
 	background-position: 50% 50%;
 }
-.promociones__wrapper{
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-	height: inherit;
-	text-align: center;
+.promociones h2{
+	font-weight: 600;
 }
-.promociones section{
-	margin: 50px auto;
-	max-width: 1200px;
-	height: 450px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-/* .card{
-	padding-bottom: 10px;
-	border: 1px solid var(--text-footer);
-	border-radius: 10px;
-	width: 38%;
-	max-width: 300px;
-	min-width: 250px;
-	height: 450px;
-	display: flex;
-	flex-direction: column;
-	color: white;
-	background-color: var(--color-background);
-	overflow: hidden;
-}
-.card img{
-	width: 100%;
-	height: 70%;
-}
-.card p{
-	margin: 10px 0;
-	padding: 5px 10px;
+.card{
+	-webkit-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
+	-moz-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
+	box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 }
 .card a{
-	margin: 0 auto;
-} */
+	border: 2px solid var(--color-background);
+	font-weight: 500;
+	color: white;
+	background-color:  var(--color-background);
+}
+.card a:hover{
+	border: 2px solid var(--color-background);
+	font-weight: 500;
+	color: var(--color-background);
+	background-color:  white;
+}
+
+
+
+
+
+
+
 
 
 
@@ -306,6 +296,7 @@ header .card .card-body{
 /*********  S E C T I O N S **********/
 
 .section{
+	
 	padding: 25px 15px;
 	width: 100%;
 	height: auto;
@@ -314,6 +305,7 @@ header .card .card-body{
 
 /* S E C T I O N - 1  --- "Calidad e Innovación" */
 .calidad{
+	margin-top: 300px;
 	padding-top: 40px;
 	width: 100%;
 	height: 450px;
@@ -768,6 +760,24 @@ footer{
 		justify-content: start;
 	}
 
+
+}
+
+@media screen and (max-width: 991px){
+	.promociones{
+		min-height: 100vh;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px){
+	.promociones{
+		max-height: 80vh;
+	}
+}
+@media screen and (min-width: 1024px){
+	.promociones{
+		max-height: 400px;
+	}
 }
 
 
@@ -909,31 +919,7 @@ footer{
 		max-width: 99%;
 	}
 
-	.promociones{
-		margin: 0;
-		height: 100%;
-		grid-column: 1/2;
-		grid-row: 5/6;
-	}
-	.promociones section{
-		height: auto;
-		flex-direction: column;
-	}
-	.card{
-	margin-bottom: 30px;
-	}
-	.calidad{
-		height: auto;
-		grid-column: 1/2;
-		grid-row: 6/7;
-	}
-	.calidad article{
-		flex-direction: column;
-	}
-	.calidad article div{
-		margin-top: 25px;
-		width: 90%;
-	}
+
 	.convenios{
 		grid-column: 1/2;
 		grid-row: 7/8;
@@ -1147,21 +1133,7 @@ footer{
 		display: inline-block;
 	}
 
-	.promociones{
-		margin: 0;
-		height: 100%;
-		grid-column: 1/2;
-		grid-row: 5/6;
-	}
-	.promociones section{
-		height: auto;
-		flex-direction: column;
-	}
-	.card{
-	margin-bottom: 40px;
-	width: 80vw;
-	max-width: 380px;
-	}
+
 	.calidad{
 		height: auto;
 		grid-column: 1/2;
@@ -1310,21 +1282,7 @@ footer{
 		height: 75%;
 	}
 
-	.promociones{
-		margin: 0;
-		height: 100%;
-		grid-column: 1/4;
-		grid-row: 6/7;
-	}
-	.promociones section{
-		height: auto;
-		flex-direction: column;
-	}
-	.card{
-	margin-bottom: 40px;
-	width: 80vw;
-	max-width: 380px;
-	}
+
 	.calidad{
 		grid-column: 1/4;
 		grid-row: 7/8;
@@ -1365,35 +1323,8 @@ footer{
 
 
 @media (min-width: 992px) and (max-width: 1023px) {
-	/* .btn-whatsapp{
-		right: 10px;
-		bottom: 0x;
-	}
-	.promociones{
-		padding: 100px 5px 0;
-	}
-	.promociones section{
-		justify-content: space-between;
-	}
-	.card{
-		max-width: 270px;
-	} */
+
 }
 @media (min-width: 1024px){
-	/* .menu__enlaces__principales a::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		background: var(--color-secondary);
-		z-index: 1;
-		transform: scaleX(0);
-		transform-origin: left;
-		transition: transform 0.5s ease-in-out;
-	}
-	.menu__enlaces__principales a:hover::before {
-		transform: scaleX(1);
-	} */
+
 }
