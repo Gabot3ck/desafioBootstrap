@@ -339,11 +339,9 @@ header .card .card-body{
 /*********  S E C T I O N S **********/
 
 .section{
-	
 	padding: 25px 15px;
 	width: 100%;
 	height: auto;
-	text-align: center;
 }
 
 
@@ -354,23 +352,10 @@ header .card .card-body{
 
 .convenios{
 	width: 100%;
-	grid-column: 1/5;
-	grid-row: 7/8;
 	background-color: var(--color-copyright);
 }
 .convenios h2{
 	color: white;
-}
-.convenios ul{
-	margin: 30px auto 0;
-	max-width: 1200px;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-}
-.convenios ul img{
-	width: 200px;
-	height: 90px;
 }
 
 
