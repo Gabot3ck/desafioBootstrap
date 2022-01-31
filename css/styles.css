@@ -7,10 +7,12 @@
 	--color-footer: #313131;
 	--color-copyright: #1f1f1f;
 	--color-contacto: #555555;
+	--color-pink: #fc00ff;
 	--title-footer: #ccc;
 	--text-footer: #8a8a8a;
 	--btn-whatsapp: #4cca5a;
 	--font-texto: "Ubuntu", sans-serif;
+	
 }
 
 html{
@@ -262,18 +264,18 @@ header .card .card-body{
 .promociones h2{
 	font-weight: 600;
 }
-.card{
+.promociones .card{
 	-webkit-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 	-moz-box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 	box-shadow: 8px 11px 16px 0px rgba(165,177,198,0.8);
 }
-.card a{
+.boton{
 	border: 2px solid var(--color-background);
 	font-weight: 500;
 	color: white;
 	background-color:  var(--color-background);
 }
-.card a:hover{
+.boton:hover{
 	border: 2px solid var(--color-background);
 	font-weight: 500;
 	color: var(--color-background);
@@ -283,13 +285,54 @@ header .card .card-body{
 
 
 
+/* S E C T I O N -   --- "Calidad e Innovación" */
 
+/* .calidad{
+	margin-top: 350px;
+} */
 
-
-
-
-
-
+.calidad .caption{
+	/* padding: .6em; */
+	background-color: var(--color-copyright);
+}
+.calidad .caption h3{
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--color-secondary);
+}
+.calidad .caption > p{
+	font-size: .5em;
+	color: white;
+}
+.calidad .caption h3 + p{
+	margin-top: .2em;
+	margin-bottom: 1em;
+	font-size: .8em;
+	font-weight: 300;
+	color: var(--color-background);
+}
+.calidad .caption hr{
+	width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+.calidad .caption a{
+	border-color: #2db60b;
+	font-size: .5em;
+	font-weight: 600;
+	color: var(--color-copyright);
+	background-color: #2db60b;
+}
+.calidad .caption a:hover{
+	border-color: #2db60b;
+	font-weight: 600;
+	color: #2db60b;
+	background-color: transparent;
+}
+.fa-heartbeat{
+	color: var(--color-background);
+}
 
 
 
@@ -303,51 +346,8 @@ header .card .card-body{
 	text-align: center;
 }
 
-/* S E C T I O N - 1  --- "Calidad e Innovación" */
-.calidad{
-	margin-top: 300px;
-	padding-top: 40px;
-	width: 100%;
-	height: 450px;
-	grid-column: 1/5;
-	grid-row: 6/7;
-	background-image: url(../images/fondo-calidad.png);
-	background-image: cover;
-	background-position: 95% 50%;
-}
-.calidad__wrapper{
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1200px;
-	text-align: center;
-}
-.calidad article{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-.calidad  img{
-	border-radius: 50%;
-	width: 400px;
-	height: 310px;
-}
-.calidad h2{
-	margin-bottom: 20px;
-}
-.calidad article{
-	padding: 0 50px;
-}
-.calidad article div{
-	width: 40%;
-}
-.calidad article div h3{
-	font-size: 2rem;
-	color: var(--color-background);
-}
-.calidad article div p{
-	margin: 20px 0;
-	padding: 5px 10px;
-}
+
+
 
 
 /* S E C T I O N - 2 --- "Convenios" */
@@ -357,6 +357,9 @@ header .card .card-body{
 	grid-column: 1/5;
 	grid-row: 7/8;
 	background-color: var(--color-copyright);
+}
+.convenios h2{
+	color: white;
 }
 .convenios ul{
 	margin: 30px auto 0;
@@ -747,6 +750,13 @@ footer{
 
 
 
+
+
+
+
+
+/**********  M  E  D  I  A     Q  U  E  R  I  E  S  **********/
+
 @media screen and (max-width: 767px) {
 	.navbar-nav .dropdown-menu{
 		position: absolute;
@@ -760,12 +770,15 @@ footer{
 		justify-content: start;
 	}
 
-
 }
+
 
 @media screen and (max-width: 991px){
 	.promociones{
 		min-height: 100vh;
+	}
+	.calidad{
+		margin-top: 0;
 	}
 }
 
@@ -773,15 +786,31 @@ footer{
 	.promociones{
 		max-height: 80vh;
 	}
+	.calidad{
+		margin-top: 200px;
+	}
 }
 @media screen and (min-width: 1024px){
 	.promociones{
 		max-height: 400px;
 	}
+	.calidad{
+		margin-top: 300px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.calidad{
+		margin-top: 380px;
+	}
 }
 
 
-/**********  M  E  D  I  A     Q  U  E  R  I  E  S  **********/
+
+
+
+
+
+
 
 /* SMARTPHONE */
 @media (max-width: 480px){
@@ -1134,18 +1163,7 @@ footer{
 	}
 
 
-	.calidad{
-		height: auto;
-		grid-column: 1/2;
-		grid-row: 6/7;
-	}
-	.calidad article{
-		flex-direction: column;
-	}
-	.calidad article div{
-		margin-top: 25px;
-		width: 90%;
-	}
+
 	.convenios{
 		grid-column: 1/2;
 		grid-row: 7/8;
@@ -1283,11 +1301,7 @@ footer{
 	}
 
 
-	.calidad{
-		grid-column: 1/4;
-		grid-row: 7/8;
-	}
-	.convenios{
+onvenios{
 		grid-column: 1/4;
 		grid-row: 8/9;
 	}
