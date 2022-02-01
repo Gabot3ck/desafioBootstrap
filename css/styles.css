@@ -287,6 +287,10 @@ header .card .card-body{
 
 /* S E C T I O N -   --- "Calidad e Innovación" */
 
+.calidad  h2{
+	color: var(--color-background);
+	font-weight: 600;
+}
 .calidad .caption{
 	background-color: var(--color-copyright);
 }
@@ -417,27 +421,12 @@ header .card .card-body{
 
 .pagos{
 	max-width: 100%;
-	grid-column: 1/6;
-	grid-row: 9/10;
 	background-color: var(--color-background);
 }
-.pagos__wrapper{
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1200px;
-	height: auto;
+.pagos .wrapper{
 	background-color: white;
 }
-.pagos__wrapper ul{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	align-items: center;
-}
-.pagos__wrapper ul li img{
-	width: 120px;
-	height: auto;
-}
+
 
 
 /********** C O N T A C T O  ***********/
