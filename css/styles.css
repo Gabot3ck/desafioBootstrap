@@ -252,7 +252,7 @@ p{
 	width: 100% !important;
 }
 
-.nosotros{
+.nosotros__header{
 	background: rgba(27, 30, 31, .9);
 	background: -webkit-linear-gradient(to bottom,rgba(27, 30, 31, 0.5), rgba(27,31,32,.5) ), url(../images/nosotros.jpg);
 
@@ -474,6 +474,17 @@ p{
 
 
 
+
+/******** N O S O T R O S ******/
+
+#nosotros{
+	margin-top: 50px;
+	padding-top: 90px;
+
+}
+
+
+
 /********** F O O T E R  ***********/
 .footer{
 	background-color: var(--color-footer);
@@ -643,51 +654,6 @@ p{
 }
 
 
-/* N O S O T R O S */
-
-.nosotros__card{
-	margin: 0 auto;
-	padding: 25px 20px;
-	width: 100%;
-	max-width: 1200px;
-	height: 350px;
-	display: flex;
-	justify-content: space-between;
-}
-.nosotros__card img{
-	margin: 10px 15px;
-	border-radius: 8px;
-	width: 450px;
-}
-.nosotros__card p{
-	margin: 10px 15px;
-}
-
-
-/* S E R V I C I O S */
-.wrapper__servicios{
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-	height: auto;
-	padding-top: 50px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	grid-column: 1/5;
-	grid-row: 5/9;
-}
-.wrapper__servicios section{
-	margin-bottom: 70px;
-	display: flex;
-	justify-content: space-between;
-}
-.wrapper__servicios section div{
-	margin: 0 10px;
-}
-.wrapper__servicios section div p{
-	text-align: center;
-}
 
 
 
@@ -707,13 +673,13 @@ p{
 	header .card .card-body{
 		justify-content: start;
 	}
-	/* .header__enlaces{
-		height: 100%;
-		max-height: 400px;
-	} */
-	.nosotros{
-		max-height: 600px;
+	.nosotros__header{
+		max-height: 700px;
 	}
+	#nosotros{
+		margin-top: 20px;
+	}
+
 }
 
 
@@ -804,18 +770,3 @@ p{
 		padding-left: 30px;
 	}
 
-
-
-@media (min-width: 769px) and (max-width: 991px) {
-
-
-}
-
-
-@media (min-width: 992px) and (max-width: 1023px) {
-
-}
-
-@media (min-width: 1024px){
-
-}
