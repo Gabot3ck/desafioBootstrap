@@ -287,12 +287,7 @@ header .card .card-body{
 
 /* S E C T I O N -   --- "Calidad e Innovación" */
 
-/* .calidad{
-	margin-top: 350px;
-} */
-
 .calidad .caption{
-	/* padding: .6em; */
 	background-color: var(--color-copyright);
 }
 .calidad .caption h3{
@@ -351,8 +346,10 @@ header .card .card-body{
 /* S E C T I O N - 2 --- "Convenios" */
 
 .convenios{
-	width: 100%;
+	margin: 0 auto;
+	width: 100vw;
 	background-color: var(--color-copyright);
+	
 }
 .convenios h2{
 	color: white;
@@ -362,7 +359,7 @@ header .card .card-body{
 /* S E C T I O N - 3 --- "Testimonios" */
 .testimonios{
 	margin: 0 auto;
-	max-width: 1200px;
+	width: 100vw;
 	grid-column: 1/5;
 	grid-row: 8/9;
 	background: -webkit-linear-gradient(to top, rgba(6,194,204,.25), rgba(6, 38, 63, .75)) , url(../images/fondo-testimonio.jpg);
@@ -370,47 +367,44 @@ header .card .card-body{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.testimonios h2{
-	display: inline-block;
-}
+
 .fa-thumbs-up{
 	margin-left: 20px;
 	font-size: 2.6rem;
 	color: var(--color-background);
-}
-.testimonios__card{
-	margin: 50px auto 0;
-	padding: 25px;
-	border: 1px solid;
-	border-radius: 10px;
-	width: 450px;
-	height: 250px;
-	background-color: white;
-}
-.testimonios__card div{
-	position: relative;
-	margin-bottom: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.testimonios__card div img{
-	border-radius: 8px;
-	width: 70px;
-	height: 70px;
-}
-.testimonios__card div p{
-	position: absolute;
-	left: 85px;
-	font-size: 1.5rem;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 600;
-}
-.testimonios__card div .fa-facebook-f{
-	font-size: 1.2rem;
-	color: var(--color-background);
+
+
 }
 
+
+.card__cliente{
+	padding: .8em;
+	border: 1px solid var(--color-footer);
+	border-radius: 8px;
+	background-color: white;
+}
+.card__cliente .name__cliente{
+	margin-left: 1em;
+	font-size: .8em;
+	font-weight: 700;
+}
+.card__cliente .card-title{
+	margin-bottom: .6em;
+}
+.card__cliente .card-text{
+	margin-top: .8em;
+	padding: 0 .6em;
+	font-size: .5em;
+}
+.foto__cliente{
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+}
+.card__cliente .fa-facebook-f{
+	color: var(--color-background);
+	font-size: .6em;
+}
 
 /* S E C T I O N - 4--- "Medios de Pago" */
 
