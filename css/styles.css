@@ -357,26 +357,28 @@ header .card .card-body{
 
 
 /* S E C T I O N - 3 --- "Testimonios" */
-.testimonios{
-	margin: 0 auto;
+
+.clientes{
+	padding: 2rem 0;
 	width: 100vw;
-	grid-column: 1/5;
-	grid-row: 8/9;
 	background: -webkit-linear-gradient(to top, rgba(6,194,204,.25), rgba(6, 38, 63, .75)) , url(../images/fondo-testimonio.jpg);
 	background: linear-gradient(to top, rgba(6,194,204,.25), rgba(6, 38, 63, .75)) , url(../images/fondo-testimonio.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
-
-.fa-thumbs-up{
-	margin-left: 20px;
-	font-size: 2.6rem;
+.clientes h2{
+	color: white;
+	font-weight: 600;
+}
+.clientes .fa-thumbs-up{
+	margin-left: 1em;
 	color: var(--color-background);
-
-
 }
-
-
+.clientes .card{
+	border: none;
+	background: transparent;
+}
 .card__cliente{
 	padding: .8em;
 	border: 1px solid var(--color-footer);
@@ -405,6 +407,11 @@ header .card .card-body{
 	color: var(--color-background);
 	font-size: .6em;
 }
+
+
+
+
+
 
 /* S E C T I O N - 4--- "Medios de Pago" */
 
